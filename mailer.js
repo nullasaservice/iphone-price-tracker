@@ -9,10 +9,9 @@ const mailer = async () => {
 
   if (availableIphones.length < 1) {
     logInfo("No items to notify");
-  }
-  if (availableIphones.length > 1) {
+  } else {
     logInfo("Items found!");
-    
+
     const message = {
       from: ADDR,
       to: ADDR,
