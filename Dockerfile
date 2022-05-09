@@ -10,3 +10,5 @@ RUN apt update && apt install -y google-chrome-stable
 
 RUN mkdir /app
 WORKDIR /app
+
+CMD ["npm", "start"]
